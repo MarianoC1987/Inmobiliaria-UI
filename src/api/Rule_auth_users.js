@@ -1,4 +1,4 @@
-import API from "./Rule_API";
+import API from "./Rule_api";
 
 export const loginSesion = async (usuario) => {
   let url = "/api/login";
