@@ -17,7 +17,7 @@ function EstatesMap(props) {
   return (
     <Flex justify="center" direction="row" wrap="wrap">
       {props.list.map((item) => (
-        <Link to={`/detalle/${item.inmuebleId}`}>
+        <Link to={`/detalle/${item.inmuebleId}`} key={item.inmuebleId}>
           <Card w="sm" h="70vh" m="2">
             <CardBody h="85%" overflow="hidden">
               <Badge
@@ -32,7 +32,10 @@ function EstatesMap(props) {
 
               <Box h="70%" overflow="hidden">
                 <Image
-                  src={`http://localhost:3001/api/photos/${item.inmuebleId}`}
+                  /* src={`http://localhost:3001/api/photos/${item.inmuebleId}`} */
+                  src={`${import.meta.env.VITE_URL_BACK}/api/photos/${
+                    item.inmuebleId
+                  }`}
                   alt="Foto de inmueble"
                   borderRadius="lg"
                 />
@@ -58,7 +61,7 @@ function EstatesMap(props) {
                   <b>{item.precio}</b>
                 </Text>
                 <Text fontSize="lg">
-                  <p>ID#{item.inmuebleId}</p>
+                  <b>ID#{item.inmuebleId}</b>
                 </Text>
               </Flex>
             </CardFooter>
