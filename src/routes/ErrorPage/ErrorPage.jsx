@@ -1,6 +1,6 @@
 import { Flex, Text, Image, Button } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
-import photo from "/404.jpg";
+import photo from "../../assets/images/404.jpg";
 
 function ErrorPage() {
   return (
