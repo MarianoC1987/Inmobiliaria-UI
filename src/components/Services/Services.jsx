@@ -12,6 +12,11 @@ import {
   AccordionIcon,
   VStack,
 } from "@chakra-ui/react";
+import prestamos from "../../assets/images/prestamos.jpg";
+import alquileres from "../../assets/images/alquileres.jpg";
+import ventas from "../../assets/images/ventas.jpg";
+import tasaciones from "../../assets/images/tasaciones.jpg";
+
 function Services() {
   return (
     <div>
@@ -25,11 +30,7 @@ function Services() {
           <Stack direction="row">
             <Stack w="48%" direction="column">
               <Stack gap={5} direction="row">
-                <Image
-                  objectFit="contain"
-                  src="/public/prestamos.jpg"
-                  alt="Dan Abramov"
-                />
+                <Image objectFit="contain" src={prestamos} alt="Dan Abramov" />
                 <Stack boxSize="auto">
                   <Text fontSize="l" as="b">
                     PRESTAMOS INMOBILIARIOS
@@ -42,11 +43,7 @@ function Services() {
                 </Stack>
               </Stack>
               <Stack gap={5} direction="row">
-                <Image
-                  objectFit="contain"
-                  src="/public/alquileres.jpg"
-                  alt="Dan Abramov"
-                />
+                <Image objectFit="contain" src={alquileres} alt="Dan Abramov" />
                 <Stack>
                   <Text boxSize="auto" fontSize="xl" as="b">
                     ALQUILERES
@@ -61,11 +58,7 @@ function Services() {
             </Stack>
             <Stack w="48%" direction="column">
               <Stack gap={5} direction="row">
-                <Image
-                  objectFit="contain"
-                  src="/public/ventas.jpg"
-                  alt="Dan Abramov"
-                />
+                <Image objectFit="contain" src={ventas} alt="Dan Abramov" />
                 <Stack boxSize="auto">
                   <Text fontSize="xl" as="b">
                     VENTAS
@@ -78,11 +71,7 @@ function Services() {
                 </Stack>
               </Stack>
               <Stack gap={5} direction="row">
-                <Image
-                  objectFit="contain"
-                  src="/public/alquileres.jpg"
-                  alt="Dan Abramov"
-                />
+                <Image objectFit="contain" src={tasaciones} alt="Dan Abramov" />
                 <Stack>
                   <Text boxSize="auto" fontSize="xl" as="b">
                     TASACIONES
@@ -116,7 +105,7 @@ function Services() {
               <Image
                 boxSize={{ base: "20%", lg: "50%" }}
                 objectFit="cover"
-                src="/public/prestamos.jpg"
+                src={prestamos}
                 alt="Dan Abramov"
               />
               <AccordionButton>
@@ -140,7 +129,7 @@ function Services() {
               <Image
                 boxSize={{ base: "20%", lg: "50%" }}
                 objectFit="cover"
-                src="/public/alquileres.jpg"
+                src={alquileres}
                 alt="Dan Abramov"
               />
               <AccordionButton>
@@ -164,7 +153,7 @@ function Services() {
               <Image
                 boxSize={{ base: "20%", lg: "50%" }}
                 objectFit="cover"
-                src="/public/ventas.jpg"
+                src={ventas}
                 alt="Dan Abramov"
               />
               <AccordionButton>
@@ -190,7 +179,7 @@ function Services() {
               <Image
                 boxSize={{ base: "20%", lg: "50%" }}
                 objectFit="cover"
-                src="/public/tasaciones.jpg"
+                src={tasaciones}
                 alt="Dan Abramov"
               />
               <AccordionButton>

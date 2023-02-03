@@ -15,6 +15,7 @@ import {
   Flex,
 } from "@chakra-ui/react";
 import { useNavigate } from "react-router-dom";
+import logo from "../../assets/images/logoRossi.png";
 
 function Nav() {
   const navigate = useNavigate();
@@ -53,7 +54,7 @@ function Nav() {
           w="100%"
           justifyContent="space-around"
         >
-          <Image bg="white" src="../logoRossi.png" alt="logo" width="36" />
+          <Image bg="white" src={logo} alt="logo" width="36" />
 
           <Wrap>
             <WrapItem gap="1em" flexWrap="wrap">
@@ -134,13 +135,7 @@ function Nav() {
         pl="1em"
         pr="1em"
       >
-        <Image
-          bg="white"
-          src="../logoRossi.png"
-          alt="logo"
-          h="auto"
-          width="5em"
-        />
+        <Image bg="white" src={logo} alt="logo" h="auto" width="5em" />
         <Menu>
           <MenuButton
             as={IconButton}

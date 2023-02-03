@@ -11,6 +11,11 @@ import {
   AccordionPanel,
   AccordionIcon,
 } from "@chakra-ui/react";
+import foto from "../../assets/images/Rossi.jpeg";
+import icono1 from "../../assets/images/icons1.png";
+import icono2 from "../../assets/images/icons2.png";
+import icono3 from "../../assets/images/icons3.png";
+import icono4 from "../../assets/images/icons4.png";
 
 function Company() {
   return (
@@ -46,7 +51,7 @@ function Company() {
               display={{ base: "none", lg: "flex" }}
               boxSize="100%"
               objectFit="cover"
-              src="../public/Rossi.jpeg"
+              src={foto}
               alt="Dan Abramov"
             />
           </Stack>
@@ -57,7 +62,7 @@ function Company() {
                 mt="5"
                 boxSize="70px"
                 objectFit="contain"
-                src="/public/icons1.png"
+                src={icono1}
                 alt="Dan Abramov"
                 w="15%"
                 h="100%"
@@ -78,7 +83,7 @@ function Company() {
                 mt="5"
                 boxSize={{ base: "20%", lg: "70px" }}
                 objectFit="contain"
-                src="/public/icons2.png"
+                src={icono2}
                 alt="Dan Abramov"
                 w="15%"
                 h="100%"
@@ -99,7 +104,7 @@ function Company() {
                 mt="5"
                 boxSize={{ base: "20%", lg: "70px" }}
                 objectFit="contain"
-                src="/public/icons3.png"
+                src={icono3}
                 alt="Dan Abramov"
                 w="15%"
                 h="100%"
@@ -120,7 +125,7 @@ function Company() {
                 mt="5"
                 boxSize={{ base: "20%", lg: "70px" }}
                 objectFit="contain"
-                src="/public/icons4.png"
+                src={icono4}
                 alt="Dan Abramov"
                 w="15%"
                 h="100%"
@@ -169,7 +174,7 @@ function Company() {
             pl="1.5em"
             pr="1.5em"
             objectFit="cover"
-            src="../public/Rossi.jpeg"
+            src={foto}
             alt="Dan Abramov"
           />
         </Stack>
@@ -179,7 +184,7 @@ function Company() {
               <Image
                 boxSize={{ base: "20%", lg: "50%" }}
                 objectFit="cover"
-                src="/public/icons1.png"
+                src={icono1}
                 alt="Dan Abramov"
               />
               <AccordionButton>
@@ -209,7 +214,7 @@ function Company() {
               <Image
                 boxSize={{ base: "20%", lg: "50%" }}
                 objectFit="cover"
-                src="/public/icons2.png"
+                src={icono2}
                 alt="Dan Abramov"
               />
               <AccordionButton>
@@ -239,7 +244,7 @@ function Company() {
               <Image
                 boxSize={{ base: "20%", lg: "50%" }}
                 objectFit="cover"
-                src="/public/icons3.png"
+                src={icono3}
                 alt="Dan Abramov"
               />
               <AccordionButton>
@@ -268,7 +273,7 @@ function Company() {
               <Image
                 boxSize={{ base: "20%", lg: "50%" }}
                 objectFit="cover"
-                src="/public/icons4.png"
+                src={icono4}
                 alt="Dan Abramov"
               />
               <AccordionButton>

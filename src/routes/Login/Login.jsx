@@ -13,6 +13,8 @@ import {
 import { ArrowBackIcon } from "@chakra-ui/icons";
 import { loginSesion } from "../../api/Rule_auth_users";
 import Register from "../../components/Register/Register";
+import logo from "../../assets/images/logoRossi.png";
+import foto from "../../assets/images/foto.jpg";
 
 function Login() {
   const navigate = useNavigate();
@@ -35,8 +37,7 @@ function Login() {
   return (
     <div
       style={{
-        backgroundImage:
-          "url(/Proyecto-Inmobiliaria--FrontEnd/public/foto.jpg)",
+        backgroundImage: `url(${foto})`,
       }}
     >
       <Flex h="90vh" align="center" justify="center" mt="12">
@@ -57,7 +58,7 @@ function Login() {
           minW="390px"
           minH="600px"
         >
-          <Image src="../logoRossi.png" alt="logo" width="36" />
+          <Image src={logo} alt="logo" width="36" />
 
           <Text
             fontSize="4xl"

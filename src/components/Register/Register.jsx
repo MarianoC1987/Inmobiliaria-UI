@@ -17,7 +17,7 @@ import {
   useDisclosure,
   Image,
 } from "@chakra-ui/react";
-import logo from "/public/logoRossi.png";
+import logo from "../../assets/images/logoRossi.png";
 import { registerNewUser } from "../../api/Rule_auth_users";
 
 function Register() {

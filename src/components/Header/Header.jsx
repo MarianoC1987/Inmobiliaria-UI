@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { SearchIcon } from "@chakra-ui/icons";
 import { Menu, Stack, Text, Select, IconButton, Box } from "@chakra-ui/react";
+import foto from "../../assets/images/foto.jpg";
 
 function Header(props) {
   const [operacion, setOperacion] = useState("");
@@ -28,7 +29,7 @@ function Header(props) {
       <header
         style={{
           display: "flex",
-          backgroundImage: "url(/public/foto.jpg)",
+          backgroundImage: `url(${foto})`,
           alignItems: "center",
           flexDirection: "column",
           backgroundSize: "cover",
