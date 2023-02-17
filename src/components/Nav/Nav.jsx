@@ -54,7 +54,9 @@ function Nav() {
           w="100%"
           justifyContent="space-around"
         >
-          <Image bg="white" src={logo} alt="logo" width="36" />
+          <Link to={"/"}>
+            <Image bg="white" src={logo} alt="logo" width="36" />
+          </Link>
 
           <Wrap>
             <WrapItem gap="1em" flexWrap="wrap">
@@ -135,7 +137,9 @@ function Nav() {
         pl="1em"
         pr="1em"
       >
-        <Image bg="white" src={logo} alt="logo" h="auto" width="5em" />
+        <Link to={"/"}>
+          <Image bg="white" src={logo} alt="logo" h="auto" width="5em" />
+        </Link>
         <Menu>
           <MenuButton
             as={IconButton}
