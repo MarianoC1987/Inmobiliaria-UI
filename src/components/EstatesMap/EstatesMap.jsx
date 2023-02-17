@@ -32,6 +32,8 @@ function EstatesMap(props) {
 
               <Box h="70%" overflow="hidden">
                 <Image
+                  w="100%"
+                  h="100%"
                   /* src={`http://localhost:3001/api/photos/${item.inmuebleId}`} */
                   src={`${import.meta.env.VITE_URL_BACK}/api/photos/${
                     item.inmuebleId
