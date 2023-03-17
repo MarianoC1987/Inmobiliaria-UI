@@ -23,7 +23,8 @@
     "react-hook-form": "^7.40.0",
     "react-icons": "^4.7.1",
     "react-responsive-carousel": "^3.2.23",
-    "react-router-dom": "^6.4.4"
+    "react-router-dom": "^6.4.4",
+    "sweetalert": "^2.1.2"
   },
   "devDependencies": {
     "@types/react": "^18.0.24",
