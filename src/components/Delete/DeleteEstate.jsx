@@ -9,11 +9,47 @@ import {
   InputLeftElement,
 } from "@chakra-ui/react";
 import { DeleteIcon } from "@chakra-ui/icons";
+import swal from "sweetalert";
 
 function DeleteEstate() {
   const [id, setId] = useState();
   const handleId = (e) => {
     setId(e.target.value);
+  };
+
+  const confirmDelete = () => {
+    swal("Seguro que quieres borrar este inmueble?", {
+      buttons: ["Si", "No"],
+    })
+      /* 
+      //PROBANDO EL CATCH PORQUE NO AGARRA EL ERROR DE TIME OUT O SI NO ENCUENTRA EL SERVER
+      .then(() => {
+        deleteOneEstate();
+      })
+      .catch(() => {
+        swal("Ha ocurrido un error", {
+          icon: "error",
+        });
+      }); */
+      .then((willNotDelete) => {
+        if (!willNotDelete) {
+          deleteOneEstate();
+        }
+      });
+
+    const deleteOneEstate = async () => {
+      await Rule_Estates.deleteDelete(id)
+        .then((response) => {
+          swal("El inmueble se ha borrado correctamente", {
+            icon: "success",
+          });
+        })
+        .catch((error) => {
+          swal(error, {
+            icon: "error",
+          });
+        });
+    };
   };
 
   const deleteOneEstate = async () => {
@@ -38,7 +74,7 @@ function DeleteEstate() {
           <Button
             h="1.75rem"
             size="sm"
-            onClick={deleteOneEstate}
+            onClick={confirmDelete}
             colorScheme="red"
             margin="0.5"
           >
